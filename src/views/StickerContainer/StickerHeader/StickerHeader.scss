@@ -1,0 +1,31 @@
+.stickerHeader {
+  background-color: red;
+  height: 2rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 1rem;
+  gap: 1rem;
+
+  svg {
+    fill: white;
+  }
+}
+
+.stickerHeaderContent {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  width: 100%;
+}
+
+.headerInput {
+  height: 100%;
+  padding-block: 0.5rem;
+}
+
+.headerClose {
+  cursor: pointer;
+}
