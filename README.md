@@ -3,7 +3,7 @@
 
   &#xa0;
 
-  <!-- <a href="https://clrfsticker.netlify.app">Demo</a> -->
+  <a href="https://maliksenpai.github.io/clfr-sticker/">Demo</a> 
 </div>
 
 <h1 align="center">Clrf Sticker</h1>
