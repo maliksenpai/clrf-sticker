@@ -95,6 +95,7 @@ We are continuously working to improve Clrf Sticker and add more features. Some 
 - **Customizable Themes:** Allowing users to customize the appearance of their notes with different themes and colors.
 - **Search Functionality:** Adding a search feature to quickly find specific notes.
 - **Export and Import Notes:** Enabling users to export their notes to an external file and import notes from an external source for easier data management.
+- **Mobile Support:** Enhancing the application to provide full support and optimized experience for mobile devices.
 
 
 ## Contributing ##
