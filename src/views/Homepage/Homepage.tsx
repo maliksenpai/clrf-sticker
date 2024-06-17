@@ -11,14 +11,14 @@ const Homepage: React.FC = () => {
   const diagramContainerRef = useRef<HTMLDivElement>(null);
   const [stickerItems] = useAtom(itemsAtom);
 
-  const handleMouseDown = (e: React.MouseEvent<HTMLDivElement>) => {
+  const handleMouseDown = (e: React.PointerEvent<HTMLDivElement>) => {
     if (e.target !== diagramContainerRef.current) {
       return;
     }
     const startX = e.clientX;
     const startY = e.clientY;
 
-    const mouseMove = (e: MouseEvent) => {
+    const mouseMove = (e: PointerEvent) => {
       setTranslate({
         x: e.clientX - startX + translate.x,
         y: e.clientY - startY + translate.y,
@@ -26,12 +26,12 @@ const Homepage: React.FC = () => {
     };
 
     const mouseUp = () => {
-      window.removeEventListener("mousemove", mouseMove);
-      window.removeEventListener("mouseup", mouseUp);
+      window.removeEventListener("pointermove", mouseMove);
+      window.removeEventListener("pointerup", mouseUp);
     };
 
-    window.addEventListener("mousemove", mouseMove);
-    window.addEventListener("mouseup", mouseUp);
+    window.addEventListener("pointermove", mouseMove);
+    window.addEventListener("pointerup", mouseUp);
   };
 
   useEffect(() => {
@@ -56,7 +56,7 @@ const Homepage: React.FC = () => {
     <>
       <div
         className="diagramContainer"
-        onMouseDown={handleMouseDown}
+        onPointerDown={handleMouseDown}
         ref={diagramContainerRef}
         style={{
           transform: `scale(${scale}) translate(${translate.x}px, ${translate.y}px)`,
