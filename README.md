@@ -3,7 +3,7 @@
 
   &#xa0;
 
-  <a href="https://maliksenpai.github.io/clfr-sticker/">Demo</a> 
+  <a href="https://maliksenpai.github.io/clrf-sticker/">Demo</a> 
 </div>
 
 <h1 align="center">Clrf Sticker</h1>
@@ -43,15 +43,15 @@
 </p>
 <br>
 
-# Clfr Sticker
+# Clrf Sticker
 
 ## Introduction
 
-Clfr Sticker is an innovative browser-based note-taking application designed to enhance productivity and organization. It allows users to create, edit, and manage notes directly within their browser, saving these notes in local storage. This ensures that all notes persist across sessions, allowing users to pick up right where they left off every time they open their browser.
+Clrf Sticker is an innovative browser-based note-taking application designed to enhance productivity and organization. It allows users to create, edit, and manage notes directly within their browser, saving these notes in local storage. This ensures that all notes persist across sessions, allowing users to pick up right where they left off every time they open their browser.
 
 ##  Purpose
 
-The primary goal of Clfr Sticker is to provide a seamless and efficient note-taking experience within the browser environment. By leveraging local storage, Clfr Sticker ensures that users' notes are always available, without the need for external storage solutions or cloud services. This makes it an ideal tool for users who need quick and easy access to their notes while browsing the web.
+The primary goal of Clrf Sticker is to provide a seamless and efficient note-taking experience within the browser environment. By leveraging local storage, Clrf Sticker ensures that users' notes are always available, without the need for external storage solutions or cloud services. This makes it an ideal tool for users who need quick and easy access to their notes while browsing the web.
 
 ## Key Features
 
@@ -65,12 +65,12 @@ The primary goal of Clfr Sticker is to provide a seamless and efficient note-tak
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/clfr-sticker.git
+    git clone https://github.com/your-username/clrf-sticker.git
     ```
 
 2. Navigate to the project directory:
     ```bash
-    cd clfr-sticker
+    cd clrf-sticker
     ```
 
 3. Install packages and run the project:
@@ -90,7 +90,7 @@ The primary goal of Clfr Sticker is to provide a seamless and efficient note-tak
 
 ## Future Plans
 
-We are continuously working to improve Clfr Sticker and add more features. Some of the future enhancements include:
+We are continuously working to improve Clrf Sticker and add more features. Some of the future enhancements include:
 
 - **Customizable Themes:** Allowing users to customize the appearance of their notes with different themes and colors.
 - **Search Functionality:** Adding a search feature to quickly find specific notes.
@@ -99,7 +99,7 @@ We are continuously working to improve Clfr Sticker and add more features. Some 
 
 ## Contributing ##
 
-I welcome contributions from the community! If you would like to contribute to Clfr Sticker, please follow these steps:
+I welcome contributions from the community! If you would like to contribute to Clrf Sticker, please follow these steps:
 
 1. Fork the repository.
 2. Create a new branch (`git checkout -b feature/your-feature`).
