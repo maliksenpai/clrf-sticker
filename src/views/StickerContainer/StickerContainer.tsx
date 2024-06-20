@@ -14,6 +14,7 @@ export type StickerContainerProps = {
 
 const MIN_WIDTH = 200;
 const MIN_HEIGHT = 200;
+export const CLICKABLE_CLASS = "stickerClickable";
 
 const StickerContainer = ({ stickerItem }: StickerContainerProps) => {
   const [location, setLocation] = useState<StickerLocation>(
@@ -54,6 +55,7 @@ const StickerContainer = ({ stickerItem }: StickerContainerProps) => {
   return (
     <Rnd
       enableResizing
+      cancel={`.${CLICKABLE_CLASS}`}
       dragAxis="both"
       className={"stickerContainer"}
       default={stickerItem?.location}

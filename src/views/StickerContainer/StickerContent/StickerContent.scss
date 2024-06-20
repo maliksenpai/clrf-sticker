@@ -1,8 +1,14 @@
 .stickerContent {
-  max-height: 90%;
+  max-height: calc(100% - 2rem);
   overflow: auto;
 }
 
 .stickerContentInput {
   max-height: 100%;
+
+  & > div {
+    min-height: 167px;
+    display: flex;
+    align-items: flex-start;
+  }
 }

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import "./Homepage.scss";
 import StickerContainer from "../StickerContainer/StickerContainer";
 import StickerFab from "../StickerFab/StickerFab";
@@ -34,8 +34,8 @@ const Homepage: React.FC = () => {
     window.addEventListener("pointerup", mouseUp);
   };
 
-  useEffect(() => {
-    const handleWheel = (e: WheelEvent) => {
+  const handleWheel = (e: React.WheelEvent) => {
+    if (e.target.className === diagramContainerRef.current?.className) {
       if (e.ctrlKey) {
         e.preventDefault();
       }
@@ -44,19 +44,15 @@ const Homepage: React.FC = () => {
       } else {
         setScale((scale) => scale * 1.1);
       }
-    };
-
-    window.addEventListener("wheel", handleWheel, { passive: false });
-    return () => {
-      window.removeEventListener("wheel", handleWheel);
-    };
-  }, []);
+    }
+  };
 
   return (
     <>
       <div
         className="diagramContainer"
         onPointerDown={handleMouseDown}
+        onWheel={handleWheel}
         ref={diagramContainerRef}
         style={{
           transform: `scale(${scale}) translate(${translate.x}px, ${translate.y}px)`,

@@ -1,7 +1,11 @@
 button.stickerFab {
-  position: absolute;
+  position: fixed;
   bottom: 1rem;
   inset-inline-end: 1rem;
+
+  @media only screen and (hover: none) and (pointer: coarse) {
+    position: absolute;
+  }
 }
 
 .stickerFabIcon {

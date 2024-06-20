@@ -7,6 +7,7 @@ import { useAtom } from "jotai";
 import { itemsAtom } from "../../../data/data_utils";
 import { debounceFunc } from "../../../utils/useDebounceCallback";
 import StickerConfirmDialog from "../StickerConfirmDialog/StickerConfirmDialog";
+import { CLICKABLE_CLASS } from "../StickerContainer";
 
 export type StickerHeaderProps = {
   stickerItem?: StickerItem;
@@ -51,7 +52,7 @@ const StickerHeader = ({ stickerItem }: StickerHeaderProps) => {
       <div className={"stickerHeaderContent"}>
         <FaFile className={"headerIcon"} />
         <TextField
-          className={"headerInput"}
+          className={`headerInput ${CLICKABLE_CLASS}`}
           value={title}
           onChange={(e) => setTitle(e.target.value)}
           variant="outlined"
@@ -61,7 +62,7 @@ const StickerHeader = ({ stickerItem }: StickerHeaderProps) => {
       </div>
       <div>
         <FaRegWindowClose
-          className={"headerClose"}
+          className={`headerClose ${CLICKABLE_CLASS}`}
           onClick={handleCloseButton}
         />
       </div>

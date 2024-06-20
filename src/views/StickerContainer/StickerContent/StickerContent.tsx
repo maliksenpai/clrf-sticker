@@ -5,6 +5,7 @@ import { useAtom } from "jotai";
 import { itemsAtom } from "../../../data/data_utils";
 import { StickerItem } from "../../../data/data_utils.types";
 import { debounceFunc } from "../../../utils/useDebounceCallback";
+import { CLICKABLE_CLASS } from "../StickerContainer";
 
 export type StickerContainerProps = {
   stickerItem?: StickerItem;
@@ -27,7 +28,7 @@ const StickerContainer = ({ stickerItem }: StickerContainerProps) => {
   return (
     <div className="stickerContent">
       <TextField
-        className={"stickerContentInput"}
+        className={`stickerContentInput ${CLICKABLE_CLASS}`}
         value={content}
         onChange={(e) => setContent(e.target.value)}
         variant="outlined"
