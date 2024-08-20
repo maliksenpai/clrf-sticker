@@ -3,13 +3,15 @@ import "./Homepage.scss";
 import StickerContainer from "../StickerContainer/StickerContainer";
 import StickerFab from "../StickerFab/StickerFab";
 import { useAtom } from "jotai";
-import { itemsAtom } from "../../data/data_utils";
+import { introducedUser, itemsAtom } from "../../data/data_utils";
+import IntroduceModal from "../IntroduceModal/IntroduceModal";
 
 const Homepage: React.FC = () => {
   const [scale, setScale] = useState(1);
   const [translate, setTranslate] = useState({ x: 0, y: 0 });
   const diagramContainerRef = useRef<HTMLDivElement>(null);
   const [stickerItems] = useAtom(itemsAtom);
+  const [introducedUserState] = useAtom<boolean>(introducedUser);
 
   const handleMouseDown = (e: React.PointerEvent<HTMLDivElement>) => {
     if (e.target !== diagramContainerRef.current) {
@@ -49,6 +51,7 @@ const Homepage: React.FC = () => {
 
   return (
     <>
+      {!introducedUserState && <IntroduceModal />}
       <div
         className="diagramContainer"
         onPointerDown={handleMouseDown}

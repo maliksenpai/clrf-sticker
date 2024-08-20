@@ -4,5 +4,28 @@
         "content": "Are you sure you want to delete this note?",
         "cancel": "Cancel",
         "confirm": "Confirm"
+    },
+    "introduceModal": {
+        "title": "Welcome!",
+        "content": "Clrf Sticker is an innovative browser-based note-taking application designed to enhance productivity and organization.",
+        "closeButton": "Close",
+        "listItems": [
+            {
+                "title": "Persistent Notes",
+                "content": "Notes are stored in local storage, allowing them to be retrieved and edited in future browser sessions"
+            },
+            {
+                "title": "Draggable and Resizable Notes",
+                "content": "Each note can be easily moved around and resized, providing a flexible and customizable note-taking experience"
+            },
+            {
+                "title": "Individual Note Titles",
+                "content": "Each note comes with its own title, helping users to organize their notes more effectively"
+            },
+            {
+                "title": "User-Friendly Interface",
+                "content": "Intuitive design that makes note-taking quick and easy"
+            }
+        ]
     }
 }
