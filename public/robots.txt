@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://maliksenpai.github.io/clrf-sticker/sitemap.xml
