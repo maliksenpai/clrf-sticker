@@ -4,11 +4,13 @@
 }
 
 .stickerContentInput {
-  max-height: 100%;
+  height: inherit;
+  color: white;
 
   & > div {
     min-height: 167px;
     display: flex;
     align-items: flex-start;
+    padding: 0;
   }
 }

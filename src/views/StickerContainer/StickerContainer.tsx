@@ -66,7 +66,7 @@ const StickerContainer = ({ stickerItem }: StickerContainerProps) => {
     >
       <div className="stickerInnerContainer">
         <StickerHeader stickerItem={stickerItem} />
-        <StickerContent stickerItem={stickerItem} />
+        <StickerContent stickerItem={stickerItem} height={location.height} />
       </div>
     </Rnd>
   );

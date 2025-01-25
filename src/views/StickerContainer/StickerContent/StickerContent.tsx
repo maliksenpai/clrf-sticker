@@ -9,9 +9,10 @@ import { CLICKABLE_CLASS } from "../StickerContainer";
 
 export type StickerContainerProps = {
   stickerItem?: StickerItem;
+  height: number;
 };
 
-const StickerContainer = ({ stickerItem }: StickerContainerProps) => {
+const StickerContainer = ({ stickerItem, height }: StickerContainerProps) => {
   const [content, setContent] = useState<string>(stickerItem?.content || "");
   const [, setStickerItems] = useAtom(itemsAtom);
 
@@ -26,7 +27,12 @@ const StickerContainer = ({ stickerItem }: StickerContainerProps) => {
   }, [content, setStickerItems, stickerItem?.id]);
 
   return (
-    <div className="stickerContent">
+    <div
+      className="stickerContent"
+      style={{
+        backgroundColor: `${stickerItem?.color}30`,
+      }}
+    >
       <TextField
         className={`stickerContentInput ${CLICKABLE_CLASS}`}
         value={content}
@@ -34,7 +40,7 @@ const StickerContainer = ({ stickerItem }: StickerContainerProps) => {
         variant="outlined"
         fullWidth
         multiline
-        inputProps={{ style: { padding: "0.25rem" } }}
+        inputProps={{ style: { height: height - 32 } }}
       />
     </div>
   );

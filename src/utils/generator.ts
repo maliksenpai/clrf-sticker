@@ -3,8 +3,8 @@ import { StickerItem, StickerLocation } from "../data/data_utils.types";
 export const DEFAULT_LOCATION: StickerLocation = {
   x: 0,
   y: 0,
-  height: 200,
-  width: 200,
+  height: 300,
+  width: 300,
 };
 const randomColors = [
   "#D84B20",
@@ -39,7 +39,7 @@ export const generateSticker = (): StickerItem => {
   return {
     id: id,
     content: "",
-    title: `${id.toString().slice(-4)}_title`,
+    title: `Note Title ${id.toString().slice(-4)}`,
     location: DEFAULT_LOCATION,
     color: randomColors[Math.floor(Math.random() * randomColors.length)],
   };

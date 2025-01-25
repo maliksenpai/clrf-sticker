@@ -24,6 +24,10 @@
 .headerInput {
   height: 100%;
   padding-block: 0.5rem;
+
+  & > div {
+    font-weight: 700;
+  }
 }
 
 .headerClose {
